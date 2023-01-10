@@ -1,0 +1,13 @@
+# A list of licensed dependencies, used in the management of
+# licensed dependencies, in coordination with the licensed gem.
+#
+# Courtesy of the github/linguist project.
+vendor/licensed-dependencies/linguist:
+  - bin/list-licensed-deps
+  - bin/add-licensed-dep
+  - bin/sort-submodules
+  - bin/normalise-url
+  - vendor/licenses/config.yml
+  - LICENSED_DEPENDENCIES.yml
+vendor/licensed-dependencies/terraforming-rails:
+  - docker-compose.yml

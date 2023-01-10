@@ -1,0 +1,6 @@
+[submodule "vendor/licensed-dependencies/linguist"]
+	path = vendor/licensed-dependencies/linguist
+	url = https://github.com/github/linguist.git
+[submodule "vendor/licensed-dependencies/terraforming-rails"]
+	path = vendor/licensed-dependencies/terraforming-rails
+	url = https://github.com/evilmartians/terraforming-rails.git
