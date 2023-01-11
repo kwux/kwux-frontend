@@ -45,16 +45,6 @@ x-backend: &backend
     - webapp
 
 services:
-  rails:
-    <<: *backend
-    command: sh -c "bundle && bundle exec rails"
-
-  web:
-    <<: *backend
-    command: sh -c "bundle && bundle exec rails server -b 0.0.0.0"
-    ports:
-      - '3000:3000'
-
   postgres:
     image: postgres:14
     volumes:
