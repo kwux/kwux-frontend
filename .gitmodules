@@ -4,3 +4,6 @@
 [submodule "vendor/licensed-dependencies/linguist"]
 	path = vendor/licensed-dependencies/linguist
 	url = https://github.com/github/linguist.git
+[submodule "vendor/licensed-dependencies/postgres"]
+	path = vendor/licensed-dependencies/postgres
+	url = https://github.com/docker-library/postgres.git

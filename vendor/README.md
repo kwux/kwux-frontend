@@ -55,3 +55,5 @@ are made available in the
    - [dip.yml](/../../dip.yml)
    - [docker-compose.yml](/../../docker-compose.yml)
    - [Dockerfile](/../../Dockerfile)
+- **[docker-library/postgres](https://github.com/docker-library/postgres)**
+   - [.dockerdev/postgresql/docker-entrypoint-initdb.d/init-user-db.sh](/../../.dockerdev/postgresql/docker-entrypoint-initdb.d/init-user-db.sh)
