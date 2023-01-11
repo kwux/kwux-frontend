@@ -50,3 +50,8 @@ are made available in the
    - [bin/normalise-url](/../../bin/normalise-url)
    - [vendor/licenses/config.yml](/../../vendor/licenses/config.yml)
    - [LICENSED_DEPENDENCIES.yml](/../../LICENSED_DEPENDENCIES.yml)
+- **[bibendi/dip](https://github.com/bibendi/dip)**
+   - [.dockerdev/\*](/../../.dockerdev/\*)
+   - [dip.yml](/../../dip.yml)
+   - [docker-compose.yml](/../../docker-compose.yml)
+   - [Dockerfile](/../../Dockerfile)
