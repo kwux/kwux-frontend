@@ -50,5 +50,3 @@ are made available in the
    - [bin/normalise-url](/../../bin/normalise-url)
    - [vendor/licenses/config.yml](/../../vendor/licenses/config.yml)
    - [LICENSED_DEPENDENCIES.yml](/../../LICENSED_DEPENDENCIES.yml)
-- **[evilmartians/terraforming-rails](https://github.com/evilmartians/terraforming-rails)**
-   - [docker-compose.yml](/../../docker-compose.yml)
