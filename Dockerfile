@@ -50,7 +50,7 @@ RUN npm install -g yarn
 RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
     --mount=type=cache,target=/var/lib/apt,sharing=locked \
     --mount=type=tmpfs,target=/var/log \
-    --mount=type=bind,source=Aptfile,target=/tmp/Aptfile \
+    --mount=type=bind,source=./.dockerdev/Aptfile,target=/tmp/Aptfile \
     DEBIAN_FRONTEND=noninteractive apt-get install -yq --no-install-recommends \
       $(grep -Ev '^\s*#' /tmp/Aptfile | xargs)
 
