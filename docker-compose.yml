@@ -28,7 +28,7 @@ x-backend: &backend
     - ./.dockerdev/.bashrc:/root/.bashrc:ro
   environment: &backend_environment
     <<: *env
-    DATABASE_URL: postgres://postgres:postgres@postgres:5432
+    DATABASE_URL: postgres://kwux_frontend:kwux_frontend@postgres:5432
     MALLOC_ARENA_MAX: 2
     WEB_CONCURRENCY: ${WEB_CONCURRENCY:-1}
     BOOTSNAP_CACHE_DIR: /usr/local/bundle/_bootsnap
@@ -41,15 +41,17 @@ x-backend: &backend
   depends_on:
     postgres:
       condition: service_healthy
+  networks:
+    - webapp
 
 services:
   rails:
     <<: *backend
-    command: bundle exec rails
+    command: sh -c "bundle && bundle exec rails"
 
   web:
     <<: *backend
-    command: bundle exec rails server -b 0.0.0.0
+    command: sh -c "bundle && bundle exec rails server -b 0.0.0.0"
     ports:
       - '3000:3000'
 
@@ -57,16 +59,22 @@ services:
     image: postgres:14
     volumes:
       - ./.dockerdev/psqlrc:/root/.psqlrc:ro
+      - ./.dockerdev/postgresql/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d:ro
       - postgres:/var/lib/postgresql/data
       - history:/usr/local/hist
     environment:
       PSQL_HISTFILE: /usr/local/hist/.psql_history
       POSTGRES_PASSWORD: postgres
     ports:
-      - 5432
+      - 5432:5432
     healthcheck:
       test: pg_isready -U postgres -h 127.0.0.1
       interval: 5s
+    networks:
+      - webapp
+
+networks:
+  webapp:
 
 volumes:
   bundle:

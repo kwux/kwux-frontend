@@ -9,5 +9,10 @@ vendor/licensed-dependencies/linguist:
   - bin/normalise-url
   - vendor/licenses/config.yml
   - LICENSED_DEPENDENCIES.yml
-vendor/licensed-dependencies/terraforming-rails:
+vendor/licensed-dependencies/dip:
+  - .dockerdev/*
+  - dip.yml
   - docker-compose.yml
+  - Dockerfile
+vendor/licensed-dependencies/postgres:
+  - .dockerdev/postgresql/docker-entrypoint-initdb.d/init-user-db.sh

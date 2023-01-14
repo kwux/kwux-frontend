@@ -50,5 +50,10 @@ are made available in the
    - [bin/normalise-url](/../../bin/normalise-url)
    - [vendor/licenses/config.yml](/../../vendor/licenses/config.yml)
    - [LICENSED_DEPENDENCIES.yml](/../../LICENSED_DEPENDENCIES.yml)
-- **[evilmartians/terraforming-rails](https://github.com/evilmartians/terraforming-rails)**
+- **[bibendi/dip](https://github.com/bibendi/dip)**
+   - [.dockerdev/\*](/../../.dockerdev/\*)
+   - [dip.yml](/../../dip.yml)
    - [docker-compose.yml](/../../docker-compose.yml)
+   - [Dockerfile](/../../Dockerfile)
+- **[docker-library/postgres](https://github.com/docker-library/postgres)**
+   - [.dockerdev/postgresql/docker-entrypoint-initdb.d/init-user-db.sh](/../../.dockerdev/postgresql/docker-entrypoint-initdb.d/init-user-db.sh)
