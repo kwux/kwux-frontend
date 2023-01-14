@@ -119,3 +119,5 @@ fabric.properties
 /config/credentials/production.key
 
 /config/credentials/development.key
+
+node_modules

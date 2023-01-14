@@ -1,0 +1,82 @@
+<section id="description">
+  <!--Description container-->
+  <div
+    class="container flex flex-col max-w-6xl mx-auto md:px-0">
+    <h1 class="max-w-4xl mb-6 mx-auto font-sans text-3xl text-center text-gray-800 uppercase font-bold md:text-5xl md:mt-0">
+      Application Model and Operating System
+    </h1>
+
+    <h2 class="max-w-4xl mb-6 mx-auto font-sans text-xl text-center text-gray-600 uppercase md:text-xl md:mt-0">
+      Use the right tools for the job, <span class="italic">without</span> pushing back deadlines or hiring another engineer
+      just to get the code "live."
+    </h2>
+  </div>
+
+  <div class="container flex flex-col">
+    <ul class="list-decimal mx-auto space-y-4 list-inside">
+
+      <li class="">
+        Leverage (un) common software architectures
+        <div data-controller="code-highlight" class="">
+
+          <div>
+          <pre><code class="language-shell">
+kwux new --from-template=webapp --kind=rails
+          </code></pre>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        Create environments that target local, cloud, or hybrid resources
+        <div data-controller="code-highlight" class="">
+
+          <div>
+          <pre><code class="language-shell">
+kwux env add dev --target docker
+kwux env add production --target aws
+          </code></pre>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        Transform your application's architecture into meticulously maintained Infrastructure as Code
+        <div data-controller="code-highlight" class="">
+
+          <div>
+          <pre><code class="language-shell">
+kwux transpile production --via=terraform
+          </code></pre>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        And, deploy to your own cloud account, with your existing configuration
+        <div data-controller="code-highlight" class="">
+
+          <div>
+          <pre><code class="language-shell">
+kwux deploy production --with networking.vpc=OurAwesomeVPC
+          </code></pre>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        Or, let kwux handle the scary stuff like security, VPN, and encryption
+        with our safe, and reviewable, defaults
+        <div data-controller="code-highlight" class="">
+
+          <div>
+          <pre><code class="language-shell">
+kwux deploy production --with networking.VPN
+          </code></pre>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>

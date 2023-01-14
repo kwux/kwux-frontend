@@ -2,12 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-/*
+@import "highlight.js/styles/default.css";
 
-@layer components {
-  .btn-primary {
-    @apply py-2 px-4 bg-blue-200;
-  }
+pre, code {
+    white-space: pre-wrap;
+    overflow-x: scroll;
 }
-
-*/
+.hljs {
+    display: inline-block;
+    overflow-x: scroll;
+}
