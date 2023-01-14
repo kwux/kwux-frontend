@@ -8,6 +8,12 @@ Bundler.require(*Rails.groups)
 
 module KwuxFrontend
   class Application < Rails::Application
+    # Application Version
+    VERSION = "0.0.0"
+
+    # https://github.com/rails/tailwindcss-rails/issues/153
+    config.assets.css_compressor = nil
+
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
 
@@ -21,5 +27,6 @@ module KwuxFrontend
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    config.fathom = { site_id: ENV.fetch("FATHOM_ANALYTICS_SITE_ID", "") }
   end
 end

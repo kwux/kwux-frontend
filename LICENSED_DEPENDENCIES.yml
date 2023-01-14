@@ -16,3 +16,7 @@ vendor/licensed-dependencies/dip:
   - Dockerfile
 vendor/licensed-dependencies/postgres:
   - .dockerdev/postgresql/docker-entrypoint-initdb.d/init-user-db.sh
+vendor/licensed-dependencies/gitlab-foss:
+  - .gitlab-ci.yml
+vendor/licensed-dependencies/bump2version:
+  - .bumpversion.cfg

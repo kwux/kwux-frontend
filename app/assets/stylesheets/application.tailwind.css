@@ -2,13 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "highlight.js/styles/default.css";
-
-pre, code {
-    white-space: pre-wrap;
-    overflow-x: scroll;
+.header-container {
+    @apply max-w-6xl mx-auto text-center px-10;
 }
-.hljs {
-    display: inline-block;
-    overflow-x: scroll;
+
+.model-component {
+    @apply inline-flex items-center justify-start max-w-[55%];
+}
+
+.component-button {
+    @apply  rounded-md px-1 md:px-3 py-1 font-light uppercase text-xs leading-tight text-center;
+}
+
+span.button-text {
+    @apply align-text-bottom;
 }

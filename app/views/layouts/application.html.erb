@@ -9,12 +9,15 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <%= hotwire_livereload_tags if Rails.env.development? %>
+    <script src="https://kit.fontawesome.com/b1ed12b0ad.js" crossorigin="anonymous"></script>
+    <%= render "shared/analytics_resources" %>
   </head>
 
   <body>
     <%= render "layouts/header" %>
 
-    <main class="container max-w-6xl mx-auto mt:6 md:mt-12 px-5">
+    <main class="container max-w-6xl mx-auto mt:4 md:mt-8 px-5">
       <%= yield %>
     </main>
 

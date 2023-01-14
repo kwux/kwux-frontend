@@ -2,10 +2,8 @@
 // Run that command whenever you add a new controller or create them with
 // ./bin/rails generate stimulus controllerName
 
-import { application } from "./application"
+import { application } from "application"
 
-import CodeHighlightController from "./code_highlight_controller"
-application.register("code-highlight", CodeHighlightController)
-
-import HelloController from "./hello_controller"
+// https://stackoverflow.com/a/73136675/1162491
+import HelloController from "hello_controller"
 application.register("hello", HelloController)

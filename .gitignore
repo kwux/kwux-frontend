@@ -28,8 +28,6 @@
 !/tmp/storage/
 !/tmp/storage/.keep
 
-/public/assets
-
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 /config/credentials/*.key
@@ -121,3 +119,7 @@ fabric.properties
 /config/credentials/development.key
 
 node_modules
+
+/config/credentials/staging.key
+
+/config/credentials/test.key

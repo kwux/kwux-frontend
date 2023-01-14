@@ -62,6 +62,7 @@ test:
   <<: *default
   database: kwux_frontend_test
   username: kwux_frontend
+  host: postgres
 
   # The password associated with the postgres role (username).
   password: kwux_frontend
@@ -86,8 +87,16 @@ test:
 # Read https://guides.rubyonrails.org/configuring.html#configuring-a-database
 # for a full overview on how database connection configuration can be specified.
 #
+staging:
+  <<: *default
+  host: <%= ENV.fetch("KWUX_DATABASE_HOST", "") %>
+  database: <%= ENV.fetch("KWUX_DATABASE_NAME", "") %>
+  username: <%= ENV.fetch("KWUX_DATABASE_USERNAME", "") %>
+  password: <%= ENV.fetch("KWUX_DATABASE_PASSWORD", "") %>
+
 production:
   <<: *default
-  database: kwux_frontend_production
-  username: kwux_frontend
-  password: <%= ENV["KWUX_FRONTEND_DATABASE_PASSWORD"] %>
+  host: <%= ENV.fetch("KWUX_DATABASE_HOST", "") %>
+  database: <%= ENV.fetch("KWUX_DATABASE_NAME", "") %>
+  username: <%= ENV.fetch("KWUX_DATABASE_USERNAME", "") %>
+  password: <%= ENV.fetch("KWUX_DATABASE_PASSWORD", "") %>

@@ -1,6 +1,12 @@
+[submodule "vendor/licensed-dependencies/bump2version"]
+	path = vendor/licensed-dependencies/bump2version
+	url = https://github.com/c4urself/bump2version.git
 [submodule "vendor/licensed-dependencies/dip"]
 	path = vendor/licensed-dependencies/dip
 	url = https://github.com/bibendi/dip.git
+[submodule "vendor/licensed-dependencies/gitlab-foss"]
+	path = vendor/licensed-dependencies/gitlab-foss
+	url = https://gitlab.com/gitlab-org/gitlab-foss.git
 [submodule "vendor/licensed-dependencies/linguist"]
 	path = vendor/licensed-dependencies/linguist
 	url = https://github.com/github/linguist.git

@@ -57,3 +57,7 @@ are made available in the
    - [Dockerfile](/../../Dockerfile)
 - **[docker-library/postgres](https://github.com/docker-library/postgres)**
    - [.dockerdev/postgresql/docker-entrypoint-initdb.d/init-user-db.sh](/../../.dockerdev/postgresql/docker-entrypoint-initdb.d/init-user-db.sh)
+- **[gitlab:gitlab-org/gitlab-foss](https://gitlab.com/gitlab-org/gitlab-foss)**
+   - [.gitlab-ci.yml](/../../.gitlab-ci.yml)
+- **[c4urself/bump2version](https://github.com/c4urself/bump2version)**
+   - [.bumpversion.cfg](/../../.bumpversion.cfg)

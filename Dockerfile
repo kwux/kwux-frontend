@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-ARG RUBY_VERSION
+ARG RUBY_VERSION=3.2.0
 ARG DISTRO_NAME=bullseye
 
 FROM ruby:$RUBY_VERSION-slim-$DISTRO_NAME
@@ -76,4 +76,4 @@ WORKDIR /app
 # Document that we're going to expose port 3000
 EXPOSE 3000
 # Use Bash as the default command
-CMD ["/usr/bin/bash"]
+CMD ["/bin/bash"]
