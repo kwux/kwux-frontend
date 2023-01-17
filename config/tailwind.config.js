@@ -1,4 +1,5 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
+const plugin = require('tailwindcss/plugin')
 
 module.exports = {
   content: [
@@ -9,6 +10,16 @@ module.exports = {
   ],
   theme: {
     extend: {
+
+      animation: {
+        'pulse-better': 'pulse 2s cubic-bezier(0.4, 0.5, 0.6, 1) infinite',
+      },
+      keyframes: {
+        'pulse-better': {
+          '0%, 100%': { opacity: 1 },
+          '50%': { opacity: .75 },
+        }
+      },
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
@@ -72,5 +83,20 @@ module.exports = {
     require('@tailwindcss/forms'),
     require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/typography'),
+
+    plugin(({matchUtilities, theme}) => {
+      matchUtilities(
+        {
+          "animation-delay": (value) => {
+            return {
+              "animation-delay": value,
+            };
+          },
+        },
+        {
+          values: theme("transitionDelay"),
+        }
+      );
+    }),
   ]
 }
