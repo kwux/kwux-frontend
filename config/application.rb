@@ -9,7 +9,7 @@ Bundler.require(*Rails.groups)
 module KwuxFrontend
   class Application < Rails::Application
     # Application Version
-    VERSION = "0.0.0"
+    VERSION = "0.0.1-dev1"
 
     # https://github.com/rails/tailwindcss-rails/issues/153
     config.assets.css_compressor = nil
