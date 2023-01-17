@@ -11,7 +11,7 @@
 }
 
 .component-button {
-    @apply  rounded-md px-1 md:px-3 py-1 font-light uppercase text-xs leading-tight text-center;
+    @apply rounded-md px-1 md:px-3 py-1 font-light uppercase text-xs leading-tight text-center;
 }
 
 span.button-text {
