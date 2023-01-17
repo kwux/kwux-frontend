@@ -24,8 +24,29 @@
       </div>
       <div class="bg-gray-300 p-2 overflow-scroll text-left rounded-b-md text-xs border-b-2 border-x-2 border-black">
         <div class="whitespace-normal space-y-3 font-mono">
-          <div>
-            $ kwux init .
+          <div class="whitespace-nowrap inline-flex">
+            <div class="mr-2">
+              $
+            </div>
+
+            <%# https://github.com/tailwindlabs/tailwindcss/discussions/3378 %>
+            <div class="inline-flex mr-2">
+              <div  class="animation-delay-[1000ms] animate-pulse-better text-safflowerPurple-600">k</div>
+              <div  class="animation-delay-[1075ms] animate-pulse-better text-safflowerPurple-600">w</div>
+              <div  class="animation-delay-[1150ms] animate-pulse-better text-safflowerPurple-600">u</div>
+              <div  class="animation-delay-[1250ms] animate-pulse-better text-safflowerPurple-600">x</div>
+            </div>
+
+            <div class="inline-flex mr-2">
+              <div  class="text-safflowerPurple-600"> i</div>
+              <div  class="text-safflowerPurple-600"> n</div>
+              <div  class="text-safflowerPurple-600"> i</div>
+              <div  class="text-safflowerPurple-600"> t</div>
+            </div>
+
+            <div class="inline-flex">
+              <div  class="text-safflowerPurple-600"> .</div>
+            </div>
           </div>
           <div class="flex flex-col space-y-1">
             <p>
@@ -96,7 +117,7 @@
           <div class="flex flex-col">
             <p>
               <i class="fas fa-rocket text-samphireGreen-600"></i>
-              Generate the IaC for this project now, using the defaults listed below? ([Y, N])?
+              Generate IaC for this project now, using the defaults listed below? ([Y, N])?
               <span class="font-bold">Y</span>
             </p>
 
