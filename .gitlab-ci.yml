@@ -67,8 +67,11 @@ test-rails:
   <<: *gitlab-registry-before_script
   script:
     - export RAILS_MASTER_KEY="$RAILS_MASTER_KEY_TEST"
+    - export RAILS_ENV="test"
     - docker pull $CONTAINER_TEST_IMAGE
     # Prepare the database; since we can't mount a volume on the service
+    # HOST is set via RAILS_ENV, in docker-compose, which is set to test
+    # also set explicitly above
     - docker compose run 
         -e POSTGRES_USER="postgres"
         -e POSTGRES_DB="postgres"
@@ -78,20 +81,13 @@ test-rails:
         postgres
     - docker compose run rails-test bundle
     - docker compose run
-      -e POSTGRES_USER="kwux_frontend"
-      -e POSTGRES_DB="kwux_frontend"
-      -e POSTGRES_PASSWORD="kwux_frontend"
+      -e KWUX_DATABASE_HOST="postgres"
       rails-test rails db:create
     - docker compose run
-      -e POSTGRES_USER="kwux_frontend"
-      -e POSTGRES_DB="kwux_frontend"
-      -e POSTGRES_PASSWORD="kwux_frontend"
+      -e KWUX_DATABASE_HOST="postgres"
       rails-test rails db:test:prepare
-    - docker compose run 
-      -e RAILS_MASTER_KEY="$RAILS_MASTER_KEY"
-      -e POSTGRES_USER="kwux_frontend"
-      -e POSTGRES_DB="kwux_frontend"
-      -e POSTGRES_PASSWORD="kwux_frontend"
+    - docker compose run
+      -e KWUX_DATABASE_HOST="postgres"
       rails-test
 
 release-rails-image:

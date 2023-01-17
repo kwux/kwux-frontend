@@ -62,7 +62,7 @@ test:
   <<: *default
   database: kwux_frontend_test
   username: kwux_frontend
-  host: postgres
+  host: <%= ENV.fetch("KWUX_DATABASE_HOST", "localhost") %>
 
   # The password associated with the postgres role (username).
   password: kwux_frontend
