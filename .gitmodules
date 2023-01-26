@@ -13,3 +13,6 @@
 [submodule "vendor/licensed-dependencies/postgres"]
 	path = vendor/licensed-dependencies/postgres
 	url = https://github.com/docker-library/postgres.git
+[submodule "vendor/licensed-dependencies/wait-for-it"]
+	path = vendor/licensed-dependencies/wait-for-it
+	url = https://github.com/vishnubob/wait-for-it.git

@@ -20,3 +20,5 @@ vendor/licensed-dependencies/gitlab-foss:
   - .gitlab-ci.yml
 vendor/licensed-dependencies/bump2version:
   - .bumpversion.cfg
+vendor/licensed-dependencies/wait-for-it:
+  - bin/wait-for-it.sh
