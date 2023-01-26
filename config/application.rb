@@ -28,5 +28,12 @@ module KwuxFrontend
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
     config.fathom = { site_id: ENV.fetch("FATHOM_ANALYTICS_SITE_ID", "") }
+
+    config.generators do |g|
+      g.test_framework  :rspec, fixture: true
+      # https://guides.rubyonrails.org/generators.html
+      # https://stackoverflow.com/questions/11702265/can-factorybot-generate-factories-after-your-models-have-been-created
+      g.fixture_replacement :factory_bot, suffix: 'factory'
+    end
   end
 end
