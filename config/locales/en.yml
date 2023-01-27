@@ -30,4 +30,27 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  # old but relevant doc
+  # https://guides.rubyonrails.org/v3.2.0/i18n.html#translations-for-active-record-models
+  activerecord:
+    errors:
+      models:
+        waitlist/user:
+          attributes:
+            business_type:
+              format: "%{message}"
+              blank: "Help us identify your use case!"
+              inclusion: "Hm, we don't recognize that use case, it must be interesting!"
+            email_address:
+              format: "%{message}"
+              blank: "Enter your email address - we sort of need this!"
+              too_short: "Your email address seems too short"
+              too_long: "Your email address seems too long"
+  pages:
+    waitlist_signup:
+      success:
+        header: "Thanks for joining the waitlist, we're excited to work with you!"
+        subheader: "We're still building, evaluating, and vetting features."
+        alpha_contact_note: >
+          Send an email to <span class="whitespace-pre bg-blue-300 px-1 md:px-3 py-1 font-light uppercase text-xs leading-tight">mo [at] kwux.com</span> if you want
+          to be part of our pre-launch user group!

@@ -3,6 +3,9 @@
 # PagesController handles routes/actions for
 # static pages like the #index (home) page.
 class PagesController < ApplicationController
+  include CurrentWaitlistUser
+  before_action :set_waitlist_user
+
   # Action for the index/home route.
   def index; end
   # Action for the privacy policy route.

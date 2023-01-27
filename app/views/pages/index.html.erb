@@ -18,484 +18,490 @@
   </div>
 
   <div class="container">
-    <div class="flex flex-col text-center">
-      <div class="bg-epidoteOlveneOre-200 rounded-t-md border-2 border-t-black border-x-black border-b-waterlineBlue-400">
-        Kickstart local, cloud, or hybrid deployments in minutes:
-      </div>
-      <div class="bg-gray-300 p-2 overflow-scroll text-left rounded-b-md text-xs border-b-2 border-x-2 border-black">
-        <div class="whitespace-normal space-y-3 font-mono">
-          <div class="whitespace-nowrap inline-flex">
-            <div class="mr-2">
-              $
+    <div class="flex flex-wrap md:flex-nowrap space-y-2 md:space-x-8 md:space-y-0">
+
+      <div class="w-full md:w-1/2 h-96 overflow-auto flex flex-col text-center">
+        <div class="bg-epidoteOlveneOre-200 rounded-t-md border-2 border-t-black border-x-black border-b-waterlineBlue-400">
+          Kickstart local, cloud, or hybrid deployments in minutes:
+        </div>
+        <div class="bg-gray-300 p-2 overflow-auto text-left rounded-b-md text-xs border-b-2 border-x-2 border-black">
+          <div class="whitespace-normal space-y-3 font-mono">
+            <div class="whitespace-nowrap inline-flex">
+              <div class="mr-2">
+                $
+              </div>
+
+              <%# https://github.com/tailwindlabs/tailwindcss/discussions/3378 %>
+              <div class="inline-flex mr-2">
+                <div class="animation-delay-[1000ms] animate-pulse-better text-safflowerPurple-600">k</div>
+                <div class="animation-delay-[1075ms] animate-pulse-better text-safflowerPurple-600">w</div>
+                <div class="animation-delay-[1150ms] animate-pulse-better text-safflowerPurple-600">u</div>
+                <div class="animation-delay-[1250ms] animate-pulse-better text-safflowerPurple-600">x</div>
+              </div>
+
+              <div class="inline-flex mr-2">
+                <div class="text-safflowerPurple-600"> i</div>
+                <div class="text-safflowerPurple-600"> n</div>
+                <div class="text-safflowerPurple-600"> i</div>
+                <div class="text-safflowerPurple-600"> t</div>
+              </div>
+
+              <div class="inline-flex">
+                <div class="text-safflowerPurple-600"> .</div>
+              </div>
             </div>
+            <div class="flex flex-col space-y-1">
+              <p>
+                <i class="fa-solid fa-check text-safflowerPurple-500"></i>
+                Analyzing this project&#8230;
+              </p>
+              <p>
+                <i class="fa-solid fa-check text-safflowerPurple-500"></i> Looks like a Rails app.
+              </p>
+              <p>
+                <i class="fa-solid fa-check text-safflowerPurple-500"></i> Generating a
+                <span class="text-waterlineBlue-400">kwux</span> architecture&#8230;
+              </p>
 
-            <%# https://github.com/tailwindlabs/tailwindcss/discussions/3378 %>
-            <div class="inline-flex mr-2">
-              <div  class="animation-delay-[1000ms] animate-pulse-better text-safflowerPurple-600">k</div>
-              <div  class="animation-delay-[1075ms] animate-pulse-better text-safflowerPurple-600">w</div>
-              <div  class="animation-delay-[1150ms] animate-pulse-better text-safflowerPurple-600">u</div>
-              <div  class="animation-delay-[1250ms] animate-pulse-better text-safflowerPurple-600">x</div>
+              <ul class="ml-8 list-disc">
+                <li>Web server</li>
+                <li>In-memory Database: <span class="text-red-500">Redis</span></li>
+                <li>Persistent Database: <span class="text-blue-500">PostgreSQL</span></li>
+              </ul>
             </div>
-
-            <div class="inline-flex mr-2">
-              <div  class="text-safflowerPurple-600"> i</div>
-              <div  class="text-safflowerPurple-600"> n</div>
-              <div  class="text-safflowerPurple-600"> i</div>
-              <div  class="text-safflowerPurple-600"> t</div>
+            <div>
+              <p>
+                <i class="fa-solid fa-circle-info text-samphireGreen-600"></i>
+                Looking good ([Y, N])?
+                <%# You can always add/change/remove components later, too! %>
+                <span class="font-bold">Y</span>
+              </p>
             </div>
-
-            <div class="inline-flex">
-              <div  class="text-safflowerPurple-600"> .</div>
-            </div>
-          </div>
-          <div class="flex flex-col space-y-1">
-            <p>
-              <i class="fa-solid fa-check text-safflowerPurple-500"></i>
-              Analyzing this project&#8230;
-            </p>
-            <p>
-              <i class="fa-solid fa-check text-safflowerPurple-500"></i> Looks like a Rails app.
-            </p>
-            <p>
-              <i class="fa-solid fa-check text-safflowerPurple-500"></i> Generating a
-              <span class="text-waterlineBlue-400">kwux</span> architecture&#8230;
-            </p>
-
-            <ul class="ml-8 list-disc">
-              <li>Web server</li>
-              <li>In-memory Database: <span class="text-red-500">Redis</span></li>
-              <li>Persistent Database: <span class="text-blue-500">PostgreSQL</span></li>
-            </ul>
-          </div>
-          <div>
-            <p>
-              <i class="fa-solid fa-circle-info text-samphireGreen-600"></i>
-              Looking good ([Y, N])?
-              <%# You can always add/change/remove components later, too! %>
-              <span class="font-bold">Y</span>
-            </p>
-          </div>
-          <div>
-            <i class="fas fa-rocket text-samphireGreen-600"></i>
-            Configure the usual Rails environments: ([Y, N])?
-            <span class="font-bold">Y</span>
-
-            <ul class="ml-8 list-disc">
-              <li>Development (local)</li>
-              <li>Staging: <span class="text-blue-500">Cloud</span></li>
-              <li>Production: <span class="text-blue-500">Cloud</span></li>
-            </ul>
-          </div>
-
-          <div class="flex flex-col">
-            <p>
-              <i class="fa-solid fa-circle-info text-blue-500"></i>
-              Your environment defaults are:
-            </p>
-
-            <ul class="ml-8 list-disc">
-              <li>Local: <span class="font-bold text-blue-500">Docker</span></li>
-              <li>Cloud: <span class="font-bold text-orange-600">AWS</span></li>
-            </ul>
-          </div>
-
-          <div class="flex flex-col">
-            <p>
-              <i class="fa-solid fa-circle-info text-blue-500"></i>
-              Your default Infrastructure as Code (IaC) targets are:
-            </p>
-
-            <ul class="ml-8 list-disc">
-              <li>Docker: <span class="font-bold text-blue-500 underline">
-                <a href="https://docs.docker.com/compose/Docker">Docker Compose</a></span>
-              </li>
-              <li>Cloud: <span class="font-bold text-blue-500 underline">Terraform</span></li>
-            </ul>
-          </div>
-
-          <%# IAC Plan %>
-          <div class="flex flex-col">
-            <p>
+            <div>
               <i class="fas fa-rocket text-samphireGreen-600"></i>
-              Generate IaC for this project now, using the defaults listed below? ([Y, N])?
+              Configure the usual Rails environments: ([Y, N])?
               <span class="font-bold">Y</span>
-            </p>
 
-            <ul class="ml-8 list-disc">
-              <%# Networking %>
-              <li>
-                Cloud Networking:
-                <div class="flex flex-col space-y-1">
+              <ul class="ml-8 list-disc">
+                <li>Development (local)</li>
+                <li>Staging: <span class="text-blue-500">Cloud</span></li>
+                <li>Production: <span class="text-blue-500">Cloud</span></li>
+              </ul>
+            </div>
 
-                  <%# Components %>
-                  <ul class="flex flex-col list-none space-y-1">
-                    <li>
-                      <span class="text-gray-700">Prefer component isolation</span>
-                    </li>
-                    <li>
-                      <ul class="flex flex-col list-none ml-3 space-y-1">
-                        <li>
-                          <div class="flex items-center">
-                            <div class="model-component">
-                              <div class="component-button bg-gray-600">
+            <div class="flex flex-col">
+              <p>
+                <i class="fa-solid fa-circle-info text-blue-500"></i>
+                Your environment defaults are:
+              </p>
+
+              <ul class="ml-8 list-disc">
+                <li>Local: <span class="font-bold text-blue-500">Docker</span></li>
+                <li>Cloud: <span class="font-bold text-orange-600">AWS</span></li>
+              </ul>
+            </div>
+
+            <div class="flex flex-col">
+              <p>
+                <i class="fa-solid fa-circle-info text-blue-500"></i>
+                Your default Infrastructure as Code (IaC) targets are:
+              </p>
+
+              <ul class="ml-8 list-disc">
+                <li>Docker: <span class="font-bold text-blue-500 underline">
+                <a href="https://docs.docker.com/compose/Docker">Docker Compose</a></span>
+                </li>
+                <li>Cloud: <span class="font-bold text-blue-500 underline">Terraform</span></li>
+              </ul>
+            </div>
+
+            <%# IAC Plan %>
+            <div class="flex flex-col">
+              <p>
+                <i class="fas fa-rocket text-samphireGreen-600"></i>
+                Generate IaC for this project now, using the defaults listed below? ([Y, N])?
+                <span class="font-bold">Y</span>
+              </p>
+
+              <ul class="ml-8 list-disc">
+                <%# Networking %>
+                <li>
+                  Cloud Networking:
+                  <div class="flex flex-col space-y-1">
+
+                    <%# Components %>
+                    <ul class="flex flex-col list-none space-y-1">
+                      <li>
+                        <span class="text-gray-700">Prefer component isolation</span>
+                      </li>
+                      <li>
+                        <ul class="flex flex-col list-none ml-3 space-y-1">
+                          <li>
+                            <div class="flex items-center">
+                              <div class="model-component">
+                                <div class="component-button bg-gray-600">
                                 <span class="button-text text-white">
                                   Web server
                                 </span>
+                                </div>
                               </div>
-                            </div>
 
-                            <div class="inline-block font-bold text-2xl mx-1">
-                              &#8594
-                            </div>
+                              <div class="inline-block font-bold text-2xl mx-1">
+                                &#8594
+                              </div>
 
-                            <div class="model-component">
-                              <div class="component-button bg-gray-600">
+                              <div class="model-component">
+                                <div class="component-button bg-gray-600">
                             <span class="button-text text-white">
                               Persistent Database (PostgreSQL)
                             </span>
+                                </div>
                               </div>
                             </div>
-                          </div>
-                        </li>
+                          </li>
 
-                        <li>
-                          <div class="flex items-center">
-                            <div class="model-component">
-                              <div class="component-button bg-gray-600">
+                          <li>
+                            <div class="flex items-center">
+                              <div class="model-component">
+                                <div class="component-button bg-gray-600">
                             <span class="button-text text-white">
                               Web server
                             </span>
+                                </div>
                               </div>
-                            </div>
 
-                            <div class="font-bold text-2xl mx-1">
-                              &#8594
-                            </div>
+                              <div class="font-bold text-2xl mx-1">
+                                &#8594
+                              </div>
 
-                            <div class="model-component">
-                              <div class="component-button bg-gray-600">
+                              <div class="model-component">
+                                <div class="component-button bg-gray-600">
                             <span class="button-text text-white">
                               In-memory Database (Redis)
                             </span>
+                                </div>
                               </div>
                             </div>
-                          </div>
-                        </li>
+                          </li>
 
-                        <li>
-                          <div class="flex items-center">
-                            <div class="model-component shrink">
-                              <div class="component-button bg-gray-600">
+                          <li>
+                            <div class="flex items-center">
+                              <div class="model-component shrink">
+                                <div class="component-button bg-gray-600">
                             <span class="button-text text-white">
                               Web server
                             </span>
+                                </div>
                               </div>
-                            </div>
 
-                            <div class="flex justify-center font-bold text-2xl mx-1">
-                              &#8596
-                            </div>
+                              <div class="flex justify-center font-bold text-2xl mx-1">
+                                &#8596
+                              </div>
 
 
-                            <div class="model-component">
-                              <div class="component-button bg-safflowerPurple-400">
+                              <div class="model-component">
+                                <div class="component-button bg-safflowerPurple-400">
                               <span class="button-text">
                                 Load Balancer
                               </span>
+                                </div>
                               </div>
-                            </div>
 
-                            <div class="flex justify-center font-bold text-2xl mx-1">
-                              &#8596
-                            </div>
+                              <div class="flex justify-center font-bold text-2xl mx-1">
+                                &#8596
+                              </div>
 
-                            <div class="model-component">
-                              <div class="component-button bg-gray-600">
+                              <div class="model-component">
+                                <div class="component-button bg-gray-600">
                             <span class="button-text text-white">
                               Internet (HTTPs/:443)
                             </span>
+                                </div>
                               </div>
                             </div>
-                          </div>
-                        </li>
+                          </li>
 
-                      </ul>
-                    </li>
-                  </ul>
+                        </ul>
+                      </li>
+                    </ul>
 
-                  <%# People %>
-                  <ul class="flex flex-col list-none space-y-1">
-                    <li>
-                      <span class="text-gray-700">Direct resource connections:</span>
-                      <span class="font-semibold">Require</span> connection via
-                      <div class="inline-flex component-button bg-epidoteOlveneOre-400">
+                    <%# People %>
+                    <ul class="flex flex-col list-none space-y-1">
+                      <li>
+                        <span class="text-gray-700">Direct resource connections:</span>
+                        <span class="font-semibold">Require</span> connection via
+                        <div class="inline-flex component-button bg-epidoteOlveneOre-400">
                       <span class="button-text">
                         Cloud-managed VPN
                       </span>
-                      </div>
-                      in all cloud environments
-                    </li>
-                    <li>
-                      <ul class="flex flex-col list-none ml-3 space-y-1">
+                        </div>
+                        in all cloud environments
+                      </li>
+                      <li>
+                        <ul class="flex flex-col list-none ml-3 space-y-1">
 
-                        <%# Persistent Database (PostgreSQL) %>
-                        <li>
-                          <div class="flex items-center">
-                            <div class="model-component">
-                              <div class="component-button bg-blue-500">
+                          <%# Persistent Database (PostgreSQL) %>
+                          <li>
+                            <div class="flex items-center">
+                              <div class="model-component">
+                                <div class="component-button bg-blue-500">
                               <span class="button-text">
                                 <i class="fa-solid fa-users"></i>
                               </span>
+                                </div>
                               </div>
-                            </div>
 
-                            <div class="font-bold text-2xl mx-1">
-                              &#8594
-                            </div>
+                              <div class="font-bold text-2xl mx-1">
+                                &#8594
+                              </div>
 
-                            <div class="model-component">
-                              <div class="component-button bg-epidoteOlveneOre-400">
+                              <div class="model-component">
+                                <div class="component-button bg-epidoteOlveneOre-400">
                               <span class="button-text">
                                 VPN
                               </span>
+                                </div>
                               </div>
-                            </div>
 
-                            <div class="font-bold text-2xl mx-1">
-                              &#8594
-                            </div>
+                              <div class="font-bold text-2xl mx-1">
+                                &#8594
+                              </div>
 
-                            <div class="model-component">
-                              <div class="component-button bg-gray-600">
+                              <div class="model-component">
+                                <div class="component-button bg-gray-600">
                               <span class="button-text text-white">
                                 Persistent Database (PostgreSQL)
                               </span>
+                                </div>
                               </div>
                             </div>
-                          </div>
-                        </li>
+                          </li>
 
-                        <%# In-memory Database (Redis) %>
-                        <li>
-                          <div class="flex items-center">
-                            <div class="model-component">
-                              <div class="component-button bg-blue-500">
+                          <%# In-memory Database (Redis) %>
+                          <li>
+                            <div class="flex items-center">
+                              <div class="model-component">
+                                <div class="component-button bg-blue-500">
                               <span class="button-text">
                                 <i class="fa-solid fa-users"></i>
                               </span>
+                                </div>
                               </div>
-                            </div>
 
-                            <div class="font-bold text-2xl mx-1">
-                              &#8594
-                            </div>
+                              <div class="font-bold text-2xl mx-1">
+                                &#8594
+                              </div>
 
-                            <div class="model-component">
-                              <div class="component-button bg-epidoteOlveneOre-400">
+                              <div class="model-component">
+                                <div class="component-button bg-epidoteOlveneOre-400">
                               <span class="button-text">
                                 VPN
                               </span>
+                                </div>
                               </div>
-                            </div>
 
-                            <div class="font-bold text-2xl mx-1">
-                              &#8594
-                            </div>
+                              <div class="font-bold text-2xl mx-1">
+                                &#8594
+                              </div>
 
-                            <div class="model-component">
-                              <div class="component-button bg-gray-600">
+                              <div class="model-component">
+                                <div class="component-button bg-gray-600">
                               <span class="button-text text-white">
                                 In-memory Database (Redis)
                               </span>
+                                </div>
                               </div>
                             </div>
-                          </div>
-                        </li>
+                          </li>
 
-                        <%# Web server %>
-                        <li>
-                          <div class="flex items-center">
-                            <div class="model-component">
-                              <div class="component-button bg-blue-500">
+                          <%# Web server %>
+                          <li>
+                            <div class="flex items-center">
+                              <div class="model-component">
+                                <div class="component-button bg-blue-500">
                               <span class="button-text">
                                 <i class="fa-solid fa-users"></i>
                               </span>
+                                </div>
                               </div>
-                            </div>
 
-                            <div class="font-bold text-2xl mx-1">
-                              &#8594
-                            </div>
+                              <div class="font-bold text-2xl mx-1">
+                                &#8594
+                              </div>
 
-                            <div class="model-component">
-                              <div class="component-button bg-epidoteOlveneOre-400">
+                              <div class="model-component">
+                                <div class="component-button bg-epidoteOlveneOre-400">
                               <span class="button-text">
                                 VPN
                               </span>
+                                </div>
                               </div>
-                            </div>
 
-                            <div class="font-bold text-2xl mx-1">
-                              &#8594
-                            </div>
+                              <div class="font-bold text-2xl mx-1">
+                                &#8594
+                              </div>
 
-                            <div class="model-component">
-                              <div class="component-button bg-gray-600">
+                              <div class="model-component">
+                                <div class="component-button bg-gray-600">
                               <span class="button-text text-white">
                                 Web Server (instances/containers)
                               </span>
+                                </div>
                               </div>
                             </div>
-                          </div>
-                        </li>
+                          </li>
 
-                      </ul>
+                        </ul>
+                      </li>
+                    </ul>
+
+                  </div>
+                </li>
+
+                <%# Passwords %>
+                <li>
+                  Passwords:
+                  <ul class="list-none ml-3">
+                    <li>
+                      <span class="text-gray-700">Randomly generated</span>
                     </li>
-                  </ul>
-
-                </div>
-              </li>
-
-              <%# Passwords %>
-              <li>
-                Passwords:
-                <ul class="list-none ml-3">
-                  <li>
-                    <span class="text-gray-700">Randomly generated</span>
-                  </li>
-                  <li>
+                    <li>
                     <span class="text-gray-700">Stored in Cloud Secret Managers
                       (<span class="italic">e.g.</span> AWS Secrets Manager)</span>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <div class="flex">
-                  Cost estimate
-                  (
-                  <div class="inline flex">
-                    <i class="fa-regular fa-dollar-sign"></i> -
-                    <i class="fa-regular fa-dollar-sign"></i>
-                    <i class="fa-regular fa-dollar-sign"></i>
-                    <i class="fa-regular fa-dollar-sign"></i>
-                    <i class="fa-regular fa-dollar-sign"></i>
-                    <i class="fa-regular fa-dollar-sign"></i>
-                  </div>
-                  ):
-                </div>
-                <ul class="list-none ml-3">
-                  <li>
-                    Development: <span class="font-thin text-gray-700">N/A</span>
-                  </li>
-
-                  <li>
-                    <div class="flex">
-                      Staging:
-                      <div class="inline flex text-samphireGreen-600">
-                        <i class="fa-regular fa-dollar-sign"></i>
-                        <div class="mx-1 text-black">
-                          to support
-                        </div>
-                        <i class="fa-solid fa-user"></i>
-                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="flex">
+                    Cost estimate
+                    (
+                    <div class="inline flex">
+                      <i class="fa-regular fa-dollar-sign"></i> -
+                      <i class="fa-regular fa-dollar-sign"></i>
+                      <i class="fa-regular fa-dollar-sign"></i>
+                      <i class="fa-regular fa-dollar-sign"></i>
+                      <i class="fa-regular fa-dollar-sign"></i>
+                      <i class="fa-regular fa-dollar-sign"></i>
                     </div>
-                  </li>
+                    ):
+                  </div>
+                  <ul class="list-none ml-3">
+                    <li>
+                      Development: <span class="font-thin text-gray-700">N/A</span>
+                    </li>
 
-                  <li>
-                    <div class="flex">
-                      Production:
-                      <div class="inline flex text-samphireGreen-600">
-                        <i class="fa-regular fa-dollar-sign"></i>
-                        <i class="fa-regular fa-dollar-sign"></i>
-                        <div class="mx-1 text-black">
-                          to support
+                    <li>
+                      <div class="flex">
+                        Staging:
+                        <div class="inline flex text-samphireGreen-600">
+                          <i class="fa-regular fa-dollar-sign"></i>
+                          <div class="mx-1 text-black">
+                            to support
+                          </div>
+                          <i class="fa-solid fa-user"></i>
                         </div>
-                        <i class="fa-solid fa-users"></i>
                       </div>
+                    </li>
+
+                    <li>
+                      <div class="flex">
+                        Production:
+                        <div class="inline flex text-samphireGreen-600">
+                          <i class="fa-regular fa-dollar-sign"></i>
+                          <i class="fa-regular fa-dollar-sign"></i>
+                          <div class="mx-1 text-black">
+                            to support
+                          </div>
+                          <i class="fa-solid fa-users"></i>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <%# IAC Generation output %>
+            <div class="flex flex-col">
+              <p>
+                <i class="fa-solid fa-circle-info text-samphireGreen-600"></i>
+                Generation complete!
+              </p>
+
+              <ul class="ml-8 list-disc flex flex-col space-y-1">
+                <%# Networking %>
+                <%# dev %>
+                <li>
+                  <div class="flex items-center space-x-2">
+                    <div>
+                      Development environment via
+                      <span class="font-bold text-blue-500 underline"><a href="https://docs.docker.com/compose/Docker">Docker Compose</a></span>
                     </div>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
 
-          <%# IAC Generation output %>
-          <div class="flex flex-col">
-            <p>
-              <i class="fa-solid fa-circle-info text-samphireGreen-600"></i>
-              Generation complete!
-            </p>
+                    <div>
+                      @
+                    </div>
 
-            <ul class="ml-8 list-disc flex flex-col space-y-1">
-              <%# Networking %>
-              <%# dev %>
-              <li>
-                <div class="flex items-center space-x-2">
-                  <div>
-                    Development environment via <span class="font-bold text-blue-500 underline"><a href="https://docs.docker.com/compose/Docker">Docker Compose</a></span>
-                  </div>
-
-                  <div>
-                    @
-                  </div>
-
-                  <div class="model-component">
-                    <div class="rounded-md px-1 md:px-3 py-1 font-light text-xs leading-tight text-center bg-gray-600">
+                    <div class="model-component">
+                      <div class="rounded-md px-1 md:px-3 py-1 font-light text-xs leading-tight text-center bg-gray-600">
                         <span class="button-text text-white">
                           ./docker-compose.yml
                         </span>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </li>
+                </li>
 
-              <%# staging %>
-              <li>
-                <div class="flex items-center space-x-2">
-                  <div>
-                    Staging environment via <span class="font-bold text-blue-500 underline">Terraform</span>
-                  </div>
+                <%# staging %>
+                <li>
+                  <div class="flex items-center space-x-2">
+                    <div>
+                      Staging environment via <span class="font-bold text-blue-500 underline">Terraform</span>
+                    </div>
 
-                  <div>
-                    @
-                  </div>
+                    <div>
+                      @
+                    </div>
 
-                  <div class="model-component">
-                    <div class="rounded-md px-1 md:px-3 py-1 font-light text-xs leading-tight text-center bg-gray-600">
+                    <div class="model-component">
+                      <div class="rounded-md px-1 md:px-3 py-1 font-light text-xs leading-tight text-center bg-gray-600">
                       <span class="button-text text-white">
                         ./kwux/infrastructure/staging/*
                       </span>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-              </li>
+                </li>
 
-              <%# production %>
-              <li>
+                <%# production %>
+                <li>
 
-                <div class="flex items-center space-x-2">
-                  <div>
-                    Production environment via <span class="font-bold text-blue-500 underline">Terraform</span>
-                  </div>
+                  <div class="flex items-center space-x-2">
+                    <div>
+                      Production environment via <span class="font-bold text-blue-500 underline">Terraform</span>
+                    </div>
 
-                  <div>
-                    @
-                  </div>
+                    <div>
+                      @
+                    </div>
 
-                  <div class="model-component">
-                    <div class="rounded-md px-1 md:px-3 py-1 font-light text-xs leading-tight text-center bg-gray-600">
+                    <div class="model-component">
+                      <div class="rounded-md px-1 md:px-3 py-1 font-light text-xs leading-tight text-center bg-gray-600">
                         <span class="button-text text-white">
                           ./kwux/infrastructure/production
                         </span>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </li>
-            </ul>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
+
+      <%= render partial: 'waitlist_signup', locals: { waitlist_user: @waitlist_user } %>
     </div>
   </div>
 </section>

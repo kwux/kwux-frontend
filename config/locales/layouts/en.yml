@@ -1,0 +1,9 @@
+
+en:
+  layouts:
+    application:
+      title: Kwux - Deploy to your cloud. No DevOps team required.
+    waitlist_signup:
+      waitlist_md: Waitlist
+      waitlist_sm: Join the Waitlist
+    nav:
