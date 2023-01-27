@@ -29,6 +29,8 @@ module KwuxFrontend
     # config.eager_load_paths << Rails.root.join("extras")
     config.fathom = { site_id: ENV.fetch("FATHOM_ANALYTICS_SITE_ID", "") }
 
+    config.active_model.i18n_customize_full_message = true
+
     config.generators do |g|
       g.test_framework  :rspec, fixture: true
       # https://guides.rubyonrails.org/generators.html

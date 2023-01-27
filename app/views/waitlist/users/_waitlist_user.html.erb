@@ -1,0 +1,22 @@
+<div id="<%= dom_id waitlist_user %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Email address:</strong>
+    <%= waitlist_user.email_address %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Business type:</strong>
+    <%= waitlist_user.business_type %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Notes:</strong>
+    <%= waitlist_user.notes %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this user", waitlist_user, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Edit this user', edit_waitlist_user_path(waitlist_user), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>

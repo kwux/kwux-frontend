@@ -1,0 +1,18 @@
+en:
+  waitlist:
+    users:
+      form:
+        errors:
+          header: Hm, we couldn't add you to the waitlist.
+          subheader: Fix these errors and try again!
+        email_address: Email address
+        business_type: Use case
+        notes: Comments
+        submit: Add me to the waitlist!
+      controllers:
+        create:
+          success: You've been added to the waitlist!
+  pages:
+    waitlist_signup:
+      success_header: ""
+      success_alpha_contact_note: ""

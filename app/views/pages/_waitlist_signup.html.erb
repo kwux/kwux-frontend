@@ -1,0 +1,20 @@
+<%= turbo_frame_tag Waitlist::User.new, class: 'w-full md:w-1/2 flex flex-col justify-center items-center' do %>
+  <% if waitlist_user and waitlist_user.persisted? %>
+    <div class="flex flex-col justify-center items-center space-y-6 text-center">
+      <h2 class="font-semibold text-2xl">
+        <%= t('.success.header') %>
+      </h2>
+      <h3 class="w-3/4">
+        <%= t('.success.subheader') %>
+      </h3>
+      <div class="w-3/4">
+        <p>
+          <%= raw t('.success.alpha_contact_note') %>
+        </p>
+      </div>
+    </div>
+  <% else %>
+    <h2 class="font-semibold text-2xl mx-auto">Sign up for the Waitlist!</h2>
+    <%= render partial: 'waitlist/users/form', locals: { waitlist_user: @waitlist_user } %>
+  <% end %>
+<% end %>
