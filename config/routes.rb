@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  if Rails.env.development?
+    mount MaintenanceTasks::Engine => "/maintenance_tasks"
+    require "sidekiq/web"
+    Sidekiq::Web.app_url = "/"
+    mount Sidekiq::Web => "/sidekiq"
+  end
+
   namespace :waitlist do
     resources :users, only: %i[ new create ]
   end

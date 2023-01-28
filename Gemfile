@@ -53,6 +53,8 @@ gem "bootsnap", require: false
 
 gem 'rollbar'
 
+gem 'sidekiq', "~> 7.0"
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
@@ -84,3 +86,5 @@ group :test do
   gem "webdrivers"
   gem 'simplecov', "~> 0.2", require: false
 end
+
+gem "maintenance_tasks", "~> 2.0"

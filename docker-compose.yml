@@ -67,8 +67,7 @@ services:
 
   redis:
     image: redis:7.0.7
-
-    command: sh -c "redis-server --save 60 1"
+    command: redis-server --appendonly yes
     ports:
       - 6379:6379
     healthcheck:
