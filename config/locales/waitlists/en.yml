@@ -12,7 +12,3 @@ en:
       controllers:
         create:
           success: You've been added to the waitlist!
-  pages:
-    waitlist_signup:
-      success_header: ""
-      success_alpha_contact_note: ""

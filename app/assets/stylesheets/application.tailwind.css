@@ -17,3 +17,7 @@
 span.button-text {
     @apply align-text-bottom;
 }
+
+body {
+    @apply bg-epidoteOlveneOre-200;
+}
