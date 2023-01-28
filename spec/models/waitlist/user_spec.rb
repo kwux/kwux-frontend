@@ -2,12 +2,13 @@
 #
 # Table name: waitlist_users
 #
-#  id            :bigint           not null, primary key
-#  business_type :integer          not null
-#  email_address :string(319)      not null
-#  notes         :string(1024)
-#  created_at    :datetime         not null
-#  updated_at    :datetime         not null
+#  id                     :bigint           not null, primary key
+#  business_type          :integer          not null
+#  email_address          :string(319)      not null
+#  notes                  :string(1024)
+#  original_email_address :string(319)
+#  created_at             :datetime         not null
+#  updated_at             :datetime         not null
 #
 require 'rails_helper'
 
@@ -32,7 +33,7 @@ RSpec.describe Waitlist::User, type: :model do
         context "uniqueness" do
 
           it "is unique" do
-            expect(subject).to validate_uniqueness_of(:email_address)
+            expect(subject).to validate_uniqueness_of(:email_address).case_insensitive
           end
 
           it "and duplicate items aren't allowed" do
@@ -43,6 +44,12 @@ RSpec.describe Waitlist::User, type: :model do
             expect(waitlist_user_2.save).to eq false
           end
         end
+      end
+
+      it "should be encrypted" do
+        expect { subject.save }.to change { subject.encrypted_attribute?(:email_address) }
+                                     .from(false)
+                                     .to(true)
       end
     end
 
