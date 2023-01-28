@@ -51,6 +51,3 @@ en:
       success:
         header: "Thanks for joining the waitlist, we're excited to work with you!"
         subheader: "We're still building, evaluating, and vetting features."
-        alpha_contact_note: >
-          Send an email to <span class="whitespace-pre bg-blue-300 px-1 md:px-3 py-1 font-light uppercase text-xs leading-tight">mo [at] kwux.com</span> if you want
-          to be part of our pre-launch user group!

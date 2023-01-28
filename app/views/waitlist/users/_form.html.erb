@@ -1,7 +1,7 @@
 <div class="w-full flex flex-col rounded-lg m-2 p-3">
   <%= form_with(model: waitlist_user, class: "w-full") do |form| %>
     <% if waitlist_user.errors.any? %>
-      <div id="error_explanation" class="flex flex-col bg-red-200 text-white font-medium rounded-lg mb-3">
+      <div id="error_explanation" class="flex flex-col bg-red-200 text-white font-medium rounded-lg mb-3 border-white border-4 before:rounded-md before:absolute before:inset-0 before:border-2 before:border-black relative">
         <div class="text-center items-center border-b-2 px-3 py-2 border-b-black">
           <h2 class="font-bold text-gray-800"><%= t('.errors.header') %></h2>
         </div>
@@ -15,7 +15,7 @@
     <% end %>
 
     <div class="flex flex-col space-y-1 md:space-y-2 items-center">
-      <div class="border-2 w-full p-4 rounded-lg">
+      <div class="border-2 border-black outline-2 outline-white w-full p-4 rounded-lg">
         <div class="w-full">
           <%= form.label :email_address, t('.email_address'), class: "block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" %>
           <%= form.text_field :email_address,
@@ -34,7 +34,7 @@
 
       <div class="flex justify-end w-full md:w-auto md:pt-2">
         <%= form.submit t('.submit'),
-                        class: "w-full rounded-lg py-2 px-5 bg-safflowerPurple-400 text-white inline-block font-medium border-2 border-black cursor-pointer hover:border-blue-400 drop-shadow-lg" %>
+                        class: "w-full rounded-lg py-2 px-5 bg-green-200 text-black inline-block font-medium border-2 border-black cursor-pointer hover:shadow-solid-md hover:translate-x-[-0.25em] hover:translate-y-[-0.25em]" %>
       </div>
     </div>
   <% end %>

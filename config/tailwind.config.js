@@ -14,6 +14,11 @@ module.exports = {
       animation: {
         'pulse-better': 'pulse 2s cubic-bezier(0.4, 0.5, 0.6, 1) infinite',
       },
+      boxShadow: {
+        'solid-sm': '3px 3px 0 0 rgb(59, 130, 246)',
+        'solid-md': '6px 6px 0 0 rgb(59, 130, 246)',
+        'solid-lg': '9px 9px 0 0 rgb(59, 130, 246)',
+      },
       keyframes: {
         'pulse-better': {
           '0%, 100%': { opacity: 1 },
