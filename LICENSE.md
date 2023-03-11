@@ -3,6 +3,8 @@
 Portions of this software are licensed as follows:
 
 - Content of branches other than the main branch (i.e. "master" or "main") are not licensed.
+- All custom source code files and modifications that are located in "bin/" or "vendor" directories 
+  and the "LICENSED_DEPENDENCIES.yml" file are licensed under the MIT license.
 - All source code files that contain ".ee." in their filename are licensed under the
   "Kwux Enterprise License" defined in "LICENSE_EE.md".
 - All third party components incorporated into the Kwux Software are licensed under the original license
